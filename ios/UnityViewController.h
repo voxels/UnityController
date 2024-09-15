@@ -10,7 +10,9 @@
 
 @interface UnityViewController : UIViewController
 
-@property (nonatomic, strong) UIView *unityView;
+@property (nonatomic, strong) UIView *gameView;
 @property (nonatomic, strong) UnityFramework *ufw;
+
+- (void)handleTapEvent;
 
 @end

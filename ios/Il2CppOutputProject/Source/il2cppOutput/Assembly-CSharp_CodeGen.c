@@ -89,6 +89,9 @@ extern void U3CWaitUntilNextCardU3Ed__36_System_Collections_IEnumerator_Reset_m1
 extern void U3CWaitUntilNextCardU3Ed__36_System_Collections_IEnumerator_get_Current_m32915AC988ADACC69CBD8486A12AF1B0F2CBAC4B (void);
 extern void SceneTemplate_RotateCube_Update_mAF2FB34B99E325443A80D60A7EB73DC092EAE9A6 (void);
 extern void SceneTemplate_RotateCube__ctor_mC7E11C05D25FFF6F8D7EA06AAE5598B497365CD2 (void);
+extern void TouchHandler_Start_m6B0B5F04E29C13B8F518229A1177D1E1D40A5A0B (void);
+extern void TouchHandler_Update_m1138E0E69A5CDDD4511BE8E6E445983B83B626DF (void);
+extern void TouchHandler__ctor_mDF2FCF69149565CEA7539FA3AE2C1C61E9BC35BC (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
 extern void CutoutMaskUI_get_materialForRendering_m1E481305FA17C6A7AC2A91C9A8BC62CBA40EB21A (void);
@@ -103,7 +106,7 @@ extern void ARFeatheredPlaneMeshVisualizerCompanion_OnDestroy_m64B601920050D7584
 extern void ARFeatheredPlaneMeshVisualizerCompanion_Update_m541F58E1FC27F7D775FE47F2C1B1A04710BC4A27 (void);
 extern void ARFeatheredPlaneMeshVisualizerCompanion_set_visualizeSurfaces_m7A7F198C97A315F6F7F58F0BDA5269863F098D68 (void);
 extern void ARFeatheredPlaneMeshVisualizerCompanion__ctor_m3871FAD2A1135D983A9B5ADCD604F22949DE985C (void);
-static Il2CppMethodPointer s_methodPointers[91] = 
+static Il2CppMethodPointer s_methodPointers[94] = 
 {
 	ARTemplateMenuManager_get_createButton_mF094F0AC7A89F9C92C57D8517519509825A145E4,
 	ARTemplateMenuManager_set_createButton_mD65905DD827D87E747095FDAF9CE38892C4340EB,
@@ -182,6 +185,9 @@ static Il2CppMethodPointer s_methodPointers[91] =
 	U3CWaitUntilNextCardU3Ed__36_System_Collections_IEnumerator_get_Current_m32915AC988ADACC69CBD8486A12AF1B0F2CBAC4B,
 	SceneTemplate_RotateCube_Update_mAF2FB34B99E325443A80D60A7EB73DC092EAE9A6,
 	SceneTemplate_RotateCube__ctor_mC7E11C05D25FFF6F8D7EA06AAE5598B497365CD2,
+	TouchHandler_Start_m6B0B5F04E29C13B8F518229A1177D1E1D40A5A0B,
+	TouchHandler_Update_m1138E0E69A5CDDD4511BE8E6E445983B83B626DF,
+	TouchHandler__ctor_mDF2FCF69149565CEA7539FA3AE2C1C61E9BC35BC,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 	CutoutMaskUI_get_materialForRendering_m1E481305FA17C6A7AC2A91C9A8BC62CBA40EB21A,
@@ -202,7 +208,7 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[1] =
 {
 	{ 0x06000030, Goal__ctor_m1545B6E40E910D8B0648797BF96520F84FF2FF40_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[91] = 
+static const int32_t s_InvokerIndices[94] = 
 {
 	9158,
 	7287,
@@ -281,6 +287,9 @@ static const int32_t s_InvokerIndices[91] =
 	9158,
 	9305,
 	9305,
+	9305,
+	9305,
+	9305,
 	14454,
 	9305,
 	9158,
@@ -300,7 +309,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	91,
+	94,
 	s_methodPointers,
 	1,
 	s_adjustorThunks,

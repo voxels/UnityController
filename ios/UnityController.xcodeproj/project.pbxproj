@@ -516,6 +516,11 @@
 					"\"$(TARGET_BUILD_DIR)/$(FRAMEWORKS_FOLDER_PATH)\"",
 					"\"$(PROJECT_DIR)\"",
 				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"RCT_DEV=0",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",

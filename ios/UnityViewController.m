@@ -10,7 +10,7 @@
 
 @interface UnityViewController : UIViewController
 
-@property (nonatomic, strong) UIView *unityView;
+@property (nonatomic, strong) UIView *gameView;
 @property (nonatomic, strong) UnityFramework *ufw;
 
 @end
@@ -28,12 +28,23 @@
         char **newArgv = (char **)malloc(sizeof(char*));
       newArgv[0] = (char*)customArg1;
       [ufw runEmbeddedWithArgc:1 argv:newArgv appLaunchOpts: nil];
-        self.unityView = [ufw.appController rootView];
-        if (self.unityView) {
-            self.unityView.frame = self.view.bounds;
-            [self.view addSubview:self.unityView];
+        self.gameView = [ufw.appController rootView];
+        if (self.gameView) {
+            self.gameView.frame = self.view.bounds;
+            [self.gameView setExclusiveTouch:true];
+            [self.view addSubview:self.gameView];
         }
       free(newArgv);
     }
 }
+
+- (void)handleTapEvent {
+    // Ensure this runs on the main thread
+    dispatch_async(dispatch_get_main_queue(), ^{
+      NSLog(@"tap");
+        // Send a message to a GameObject in Unity
+//        [self.ufw sendMessageToGOWithName:"YourGameObjectName" functionName:"YourFunctionName" message:"YourMessage"];
+    });
+}
+
 @end
