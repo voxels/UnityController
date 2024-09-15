@@ -326,7 +326,7 @@ extern "C" void UnityCleanupTrampoline()
     if ([self isBackgroundLaunchOptions: launchOptions])
         return YES;
 
-    [self initUnityWithApplication: application];
+//    [self initUnityWithApplication: application];
     return YES;
 }
 

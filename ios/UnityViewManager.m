@@ -30,6 +30,8 @@ RCT_EXPORT_METHOD(sendTapEventToUnity)
 {
   dispatch_async(dispatch_get_main_queue(), ^{
     self.unityVC = [[UnityViewController alloc] init];
+    UIViewController *hostViewController = [[UIApplication sharedApplication] delegate].window.rootViewController;
+    self.unityVC.hostViewController = hostViewController;
 
     [UIView transitionWithView:[[UIApplication sharedApplication] delegate].window
                           duration:0.5
@@ -37,7 +39,8 @@ RCT_EXPORT_METHOD(sendTapEventToUnity)
                         animations:^{
                         [[UIApplication sharedApplication] delegate].window.rootViewController = self.unityVC;
                         }
-                        completion:nil];
+                    completion:^(BOOL finished) {
+    }];
 
         // Ensure the window is visible
       [[[UIApplication sharedApplication] delegate].window makeKeyAndVisible];

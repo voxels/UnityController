@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) UIView *gameView;
 @property (nonatomic, strong) UnityFramework *ufw;
+@property (nonatomic, strong) UIViewController *hostViewController;
 
 - (void)handleTapEvent;
 
